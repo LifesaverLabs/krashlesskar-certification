@@ -67,6 +67,10 @@ export default {
           teal: "hsl(var(--ev-teal))",
           yellow: "hsl(var(--ev-yellow))",
         },
+        safety: {
+          orange: "hsl(var(--safety-orange))",
+          "orange-light": "hsl(var(--safety-orange-light))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
