@@ -66,13 +66,13 @@ const ChargingCooperation = () => {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     {/* Flyer Preview */}
-                    <div className="aspect-[8.5/11] bg-muted rounded-lg overflow-hidden border border-border">
+                    <a href={flyer.file} download className="block aspect-[8.5/11] bg-muted rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow cursor-pointer">
                       <img
                         src={flyer.preview}
                         alt={`${flyer.title} EV Charging Cooperation Flyer Preview`}
                         className="w-full h-full object-cover"
                       />
-                    </div>
+                    </a>
                     
                     {/* Download Button */}
                     <Button 
