@@ -29,7 +29,7 @@ const Index = () => {
             We're slowly building something great for the{" "}
             <span className="font-semibold text-[hsl(var(--safety-orange))]">Automated Krashless Kar</span>
             {" "}and{" "}
-            <span className="font-semibold text-[hsl(var(--ev-green))]">Human Crashless Car</span>
+            <span className="font-semibold text-[hsl(var(--ev-green))]">Human Crash Less Car</span>
             {" "}Calmunity.
           </p>
           
