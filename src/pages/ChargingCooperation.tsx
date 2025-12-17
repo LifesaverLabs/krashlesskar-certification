@@ -2,7 +2,8 @@ import { Download, FileText, Users, Printer, Share2, Zap } from "lucide-react";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import flyerPreview from "@/assets/flyer-preview.webp";
+import flyerPreviewUS from "@/assets/flyer-preview.webp";
+import flyerPreviewA4 from "@/assets/flyer-preview-a4.webp";
 
 const ChargingCooperation = () => {
   const flyers = [
@@ -11,12 +12,14 @@ const ChargingCooperation = () => {
       subtitle: '8.5" × 11"',
       description: "Standard US paper size",
       file: "/flyers/US_Letter_EV_Charging_Cooperation_Fillable.pdf",
+      preview: flyerPreviewUS,
     },
     {
       title: "A4",
       subtitle: "210 × 297 mm",
       description: "International paper size",
       file: "/flyers/A4_EV_Charging_Cooperation_Fillable.pdf",
+      preview: flyerPreviewA4,
     },
   ];
 
@@ -65,8 +68,8 @@ const ChargingCooperation = () => {
                     {/* Flyer Preview */}
                     <div className="aspect-[8.5/11] bg-muted rounded-lg overflow-hidden border border-border">
                       <img
-                        src={flyerPreview}
-                        alt="EV Charging Cooperation Flyer Preview"
+                        src={flyer.preview}
+                        alt={`${flyer.title} EV Charging Cooperation Flyer Preview`}
                         className="w-full h-full object-cover"
                       />
                     </div>
