@@ -11,14 +11,14 @@ const ChargingCooperation = () => {
       title: "US Letter",
       subtitle: '8.5" × 11"',
       description: "Standard US paper size",
-      file: "/flyers/US_Letter_EV_Charging_Cooperation_Fillable.pdf",
+      file: "https://drive.google.com/file/d/1GQh4RdfB_vvtQ_vogAji4-YIrbhhjfdN/view?usp=sharing",
       preview: flyerPreviewUS,
     },
     {
       title: "A4",
       subtitle: "210 × 297 mm",
       description: "International paper size",
-      file: "/flyers/A4_EV_Charging_Cooperation_Fillable.pdf",
+      file: "https://drive.google.com/file/d/1ezr3KT2OAqG9axRCY1go3rK-uqTM9NJ5/view?usp=sharing",
       preview: flyerPreviewA4,
     },
   ];
@@ -66,7 +66,7 @@ const ChargingCooperation = () => {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     {/* Flyer Preview */}
-                    <a href={flyer.file} download className="block aspect-[8.5/11] bg-muted rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow cursor-pointer">
+                    <a href={flyer.file} target="_blank" rel="noopener noreferrer" className="block aspect-[8.5/11] bg-muted rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow cursor-pointer">
                       <img
                         src={flyer.preview}
                         alt={`${flyer.title} EV Charging Cooperation Flyer Preview`}
@@ -79,7 +79,7 @@ const ChargingCooperation = () => {
                       asChild 
                       className="w-full ev-gradient text-primary-foreground hover:opacity-90 transition-opacity"
                     >
-                      <a href={flyer.file} download className="inline-flex items-center gap-2">
+                      <a href={flyer.file} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
                         <Download className="h-4 w-4" />
                         Download {flyer.title} PDF
                       </a>
