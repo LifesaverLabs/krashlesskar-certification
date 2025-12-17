@@ -77,7 +77,7 @@ const Index = () => {
               Seeking Qualified Stewards
             </h2>
             <p className="text-muted-foreground mb-4">
-              We're looking for <strong className="text-foreground">professionals with adequate statistical training and competency in autonomous vehicle safety assessment</strong> who may want to take over maintenance of this certification program.
+              We're looking for <strong className="text-foreground">professionals with adequate statistical training and competency in autonomous vehicle safety assessment</strong> who may want to take over development and maintenance of this certification program.
             </p>
             <p className="text-muted-foreground">
               The ideal steward will be <strong className="text-foreground">stubborn about enforcing and escalating standards</strong> under this mark—ensuring that the Krashless Kar™ hechsher maintains its integrity and continues to raise the bar for autonomous vehicle safety.
