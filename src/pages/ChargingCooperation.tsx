@@ -2,6 +2,7 @@ import { Download, FileText, Users, Printer, Share2, Zap } from "lucide-react";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import flyerPreview from "@/assets/flyer-preview.webp";
 
 const ChargingCooperation = () => {
   const flyers = [
@@ -61,12 +62,12 @@ const ChargingCooperation = () => {
                     <CardDescription>{flyer.subtitle} — {flyer.description}</CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4">
-                    {/* PDF Preview */}
+                    {/* Flyer Preview */}
                     <div className="aspect-[8.5/11] bg-muted rounded-lg overflow-hidden border border-border">
-                      <iframe
-                        src={`${flyer.file}#view=FitH`}
-                        className="w-full h-full"
-                        title={`${flyer.title} Flyer Preview`}
+                      <img
+                        src={flyerPreview}
+                        alt="EV Charging Cooperation Flyer Preview"
+                        className="w-full h-full object-cover"
                       />
                     </div>
                     
