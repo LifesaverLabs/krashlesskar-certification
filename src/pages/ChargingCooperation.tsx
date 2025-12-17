@@ -113,7 +113,8 @@ const ChargingCooperation = () => {
                 >
                   Tear Down This Firewall
                 </a>{" "}
-                to learn about our views on restricted content.
+                to learn about our views on government censorship, especially as it inevitably restricts so much
+                thoughtful and helpful idea exchange.
               </p>
             </div>
           </div>
