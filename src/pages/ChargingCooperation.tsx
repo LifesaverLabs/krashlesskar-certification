@@ -1,4 +1,4 @@
-import { Download, FileText, Users, Printer, Share2, Zap } from "lucide-react";
+import { Download, FileText, Users, Printer, Share2, Zap, Globe } from "lucide-react";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -87,6 +87,26 @@ const ChargingCooperation = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+
+            {/* Firewall Notice */}
+            <div className="p-6 rounded-xl bg-muted/50 border border-border text-center">
+              <div className="inline-flex p-3 rounded-full bg-primary/10 text-primary mb-4">
+                <Globe className="h-6 w-6" />
+              </div>
+              <h3 className="font-semibold mb-2 text-foreground">Can't Access Google Drive?</h3>
+              <p className="text-sm text-muted-foreground mb-4 max-w-lg mx-auto">
+                If you're in a region where Google Drive is blocked, visit{" "}
+                <a 
+                  href="https://www.teardownthisfirewall.org" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline font-medium"
+                >
+                  Tear Down This Firewall
+                </a>{" "}
+                to learn about accessing restricted content safely.
+              </p>
             </div>
           </div>
         </section>
