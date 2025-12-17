@@ -36,12 +36,15 @@
 
     --radius: 0.75rem;
 
-    /* Custom EV theme tokens */
+    /* Custom theme tokens */
     --ev-green: 145 63% 32%;
     --ev-green-light: 145 50% 45%;
     --ev-teal: 165 60% 40%;
     --ev-yellow: 48 95% 55%;
+    --safety-orange: 30 100% 50%;
+    --safety-orange-light: 30 95% 58%;
     --ev-gradient: linear-gradient(135deg, hsl(145 63% 32%), hsl(165 60% 40%));
+    --krashless-gradient: linear-gradient(135deg, hsl(30 100% 50%), hsl(30 95% 58%));
 
     --sidebar-background: 140 20% 97%;
     --sidebar-foreground: 150 30% 20%;
@@ -86,6 +89,8 @@
     --ev-green-light: 145 45% 55%;
     --ev-teal: 165 50% 45%;
     --ev-yellow: 48 90% 60%;
+    --safety-orange: 30 100% 55%;
+    --safety-orange-light: 30 95% 62%;
 
     --sidebar-background: 150 25% 10%;
     --sidebar-foreground: 140 20% 90%;
@@ -114,10 +119,27 @@
     background: linear-gradient(135deg, hsl(var(--ev-green)), hsl(var(--ev-teal)));
   }
   
+  .krashless-gradient {
+    background: linear-gradient(135deg, hsl(var(--safety-orange)), hsl(var(--safety-orange-light)));
+  }
+  
   .ev-gradient-text {
     background: linear-gradient(135deg, hsl(var(--ev-green)), hsl(var(--ev-teal)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+  
+  .color-cycle {
+    animation: color-cycle 6s ease-in-out infinite;
+  }
+}
+
+@keyframes color-cycle {
+  0%, 100% {
+    background: linear-gradient(135deg, hsl(var(--ev-green)), hsl(var(--ev-teal)));
+  }
+  50% {
+    background: linear-gradient(135deg, hsl(var(--safety-orange)), hsl(var(--safety-orange-light)));
   }
 }

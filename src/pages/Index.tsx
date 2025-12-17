@@ -9,10 +9,10 @@ const Index = () => {
       <Header />
       
       <main className="flex-1 flex items-center justify-center px-4">
-        <div className="text-center max-w-2xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto">
           <div className="mb-8 flex justify-center">
             <div className="relative">
-              <div className="p-6 rounded-2xl ev-gradient text-primary-foreground animate-pulse-glow">
+              <div className="p-6 rounded-2xl color-cycle text-primary-foreground">
                 <Construction className="h-16 w-16" />
               </div>
               <div className="absolute -top-2 -right-2 p-2 rounded-full bg-ev-yellow text-foreground">
@@ -26,8 +26,11 @@ const Index = () => {
           </h1>
           
           <p className="text-xl text-muted-foreground mb-8">
-            We're building something great for the EV Calmunity. 
-            Check back soon for updates on safer, calmer driving resources.
+            We're slowly building something great for the{" "}
+            <span className="font-semibold text-[hsl(var(--safety-orange))]">Automated Krashless Kar</span>
+            {" "}and{" "}
+            <span className="font-semibold text-[hsl(var(--ev-green))]">Human Crashless Car</span>
+            {" "}Calmunity.
           </p>
           
           <div className="p-6 rounded-xl bg-secondary/50 border border-border mb-8">
