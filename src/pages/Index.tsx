@@ -104,7 +104,7 @@ const Index = () => {
       </main>
       
       <footer className="py-6 text-center text-sm text-muted-foreground border-t border-border">
-        <p>© {new Date().getFullYear()} KrashlessKar.org — Keep the electrons flowing ⚡</p>
+        <p>© {new Date().getFullYear()} Lifesaver Labs Coalition — Keep the electrons flowing ⚡</p>
       </footer>
     </div>
   );
