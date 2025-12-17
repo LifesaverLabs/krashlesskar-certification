@@ -2,6 +2,7 @@ import { Zap, ArrowRight, Shield, TrendingUp, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
+import l1Hechsher from "@/assets/krashless-kar-l1-hechsher.jpg";
 
 const Index = () => {
   return (
@@ -13,14 +14,11 @@ const Index = () => {
           {/* Hero Section */}
           <div className="text-center mb-12">
             <div className="mb-6 flex justify-center">
-              <div className="relative">
-                <div className="p-6 rounded-2xl color-cycle text-primary-foreground">
-                  <Shield className="h-16 w-16" />
-                </div>
-                <div className="absolute -top-2 -right-2 p-2 rounded-full bg-ev-yellow text-foreground">
-                  <Zap className="h-4 w-4" />
-                </div>
-              </div>
+              <img 
+                src={l1Hechsher} 
+                alt="Krashless Kar Level 1 Certification - Safer than Human 80th Percentile" 
+                className="w-64 md:w-80 h-auto rounded-xl shadow-lg"
+              />
             </div>
             
             <h1 className="font-display text-4xl md:text-5xl font-bold mb-4 text-foreground">
@@ -40,10 +38,13 @@ const Index = () => {
           <div className="p-6 rounded-xl bg-secondary/50 border border-border mb-8">
             <h2 className="font-display text-2xl font-bold mb-4 text-foreground flex items-center gap-2">
               <Shield className="h-6 w-6 text-[hsl(var(--ev-green))]" />
-              A Safety Hechsher
+              A Civic Safety Hechsher
             </h2>
             <p className="text-muted-foreground mb-4">
-              A <strong className="text-foreground">hechsher</strong> (Hebrew: הכשר) is a certification mark indicating that a product meets specific standards—traditionally used in kosher food certification to show rabbinical approval. We're applying this concept to autonomous vehicle safety: the <strong className="text-foreground">Krashless Kar™ hechsher</strong> certifies that a driverless vehicle has demonstrated statistically validated safety performance exceeding rigorous benchmarks.
+              A <strong className="text-foreground">hechsher</strong> (Hebrew: הכשר) is a certification mark indicating that a product meets specific standards—traditionally used in kosher food certification to show rabbinical approval.
+            </p>
+            <p className="text-muted-foreground mb-4">
+              We're applying this concept <strong className="text-foreground">civically, under civic religion</strong>—the shared values and sacred commitments a society holds toward the common good. Just as religious certification marks provide trust and accountability, the <strong className="text-foreground">Krashless Kar™ hechsher</strong> serves as a civic covenant: certifying that a driverless vehicle has demonstrated statistically validated safety performance exceeding rigorous benchmarks, and that we collectively hold autonomous vehicle safety as a sacred civic duty.
             </p>
           </div>
 
