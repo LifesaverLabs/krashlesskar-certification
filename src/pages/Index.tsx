@@ -2,7 +2,7 @@ import { Zap, ArrowRight, Shield, TrendingUp, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
-import l1Hechsher from "@/assets/krashless-kar-l1-hechsher.jpg";
+import l1Hechsher from "@/assets/krashless-kar-l1-hechsher.webp";
 
 const Index = () => {
   return (
