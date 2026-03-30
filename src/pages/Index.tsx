@@ -67,6 +67,18 @@ const Index = () => {
                   Higher certification levels progress <strong className="text-foreground">logarithmically</strong>, scaling toward "five nines" (99.999%) safety and reliability measured by <strong className="text-foreground">Mean Time To Krash (MTTK)</strong>. Each level represents an order of magnitude improvement in crash avoidance.
                 </p>
               </div>
+              <div className="p-4 rounded-lg bg-background/50 border border-border">
+                <h3 className="font-semibold text-lg text-foreground mb-2">Provisional vs. Hard Certification</h3>
+                <p className="text-muted-foreground mb-3">
+                  When a kar is first released on a new safety certification, manufacturers may assert a <strong className="text-foreground">provisional level</strong> for sale—marked with a doubt indicator, e.g. <strong className="text-foreground">1.5ˀ</strong>—along with an explicit <strong className="text-foreground">hard fallback guarantee</strong> to a lower level (e.g. 1.3 hard). This acknowledges that early real-world data is still accumulating.
+                </p>
+                <p className="text-muted-foreground mb-3">
+                  After a limited period of real-world sales data, the provisional claim <strong className="text-foreground">hardens or adjusts</strong>: the 1.5ˀ may become 1.5 (hard), rise to 1.6 (hard), or settle at 1.4 (hard)—reflecting what ongoing performance data actually demonstrates. There will be defined levels of acceptability for the range of doubt and uncertainty permitted on these initial provisional measures.
+                </p>
+                <p className="text-muted-foreground">
+                  Once a certification goes hard, the manufacturer assumes <strong className="text-foreground">full liability</strong>—covering any-crash and catastrophic insurance and tort obligations on their warranties. This applies both at the crash levels they were expected to hit <em>and</em> with additional penalties if they exceed their acceptable doubt/uncertainty range during the initial provisional (ˀ) sales period. Whatever level they harden or adjust their guarantee to after the data period becomes their binding, enforceable commitment.
+                </p>
+              </div>
             </div>
           </div>
 
