@@ -75,8 +75,11 @@ const Index = () => {
                 <p className="text-muted-foreground mb-3">
                   After a <strong className="text-foreground">statistically necessary amount of real-world driving data</strong> has been collected, the provisional claim <strong className="text-foreground">hardens or adjusts</strong>: the 1.5ˀ may become 1.5 (hard), rise to 1.6 (hard), or settle at 1.4 (hard)—reflecting what ongoing performance data actually demonstrates. There will be defined levels of acceptability for the range of doubt and uncertainty permitted on these initial provisional measures.
                 </p>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground mb-3">
                   Once a certification goes hard, the manufacturer assumes <strong className="text-foreground">full liability</strong>—covering any-crash and catastrophic insurance and tort obligations on their warranties. This applies both at the crash levels they were expected to hit <em>and</em> with additional penalties if they exceed their acceptable doubt/uncertainty range during the initial provisional (ˀ) sales period. Whatever level they harden or adjust their guarantee to after the data period becomes their binding, enforceable commitment.
+                </p>
+                <p className="text-muted-foreground">
+                  This framework allows <strong className="text-foreground">car insurance companies to step away from base-level risk over a short time</strong> as an industry—even if they continue assuming some part of the initial market risk—through a process of <strong className="text-foreground">consumer-silent warranty subrogation</strong>. This is suggested as a kinetically favorable way of <strong className="text-foreground">displacing traditional automobile insurance gently over time</strong>, as manufacturer crash warranties progressively absorb the liability that insurers currently carry.
                 </p>
               </div>
             </div>
