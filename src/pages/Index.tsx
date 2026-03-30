@@ -116,7 +116,7 @@ const Index = () => {
           </div>
           
           <p className="text-sm text-muted-foreground text-center">
-            Promoting calm, cooperative, crash-free driving
+            Promoting kalm, kooperative, krash-free driving
           </p>
         </div>
       </main>
